@@ -58,6 +58,22 @@ while (i < matriceStudenti.length) {
 
 
 // 5) Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+var nomeUtente = prompt('Dimmi un nome');
+var cognomeUtente = prompt('Il tuo congome?');
+var ageUtente = Number(prompt('Age?'));
 
 
+var nuovoStudente = {
 
+    nome: nomeUtente,
+    cognome: cognomeUtente,
+    age: ageUtente,
+
+
+};
+
+matriceStudenti.push(nuovoStudente);
+console.log(matriceStudenti);
+var new_ArrayEl = document.getElementById('new_array');
+
+new_ArrayEl.innerHTML = matriceStudenti;
