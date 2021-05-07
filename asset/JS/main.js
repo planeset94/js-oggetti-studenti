@@ -45,3 +45,19 @@ var matriceStudenti = [
 
 
 // 4) Ciclare su tutti gli studenti e stampare per ognuno di essi, nome e cognome.
+var matriceStudentiEl = document.getElementById('multi_oggetto');
+var i = 0;
+while (i < matriceStudenti.length) {
+    var x = matriceStudenti[i];
+    // console.log(x.nome, x.cognome);
+    matriceStudentiEl.innerHTML += `<ul>${x.nome} - ${x.cognome}</ul>`;
+    i++
+};
+
+
+
+
+// 5) Dare la possibilità all’utente, attraverso 3 prompt(), di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+
+
+
