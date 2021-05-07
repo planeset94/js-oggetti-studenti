@@ -76,4 +76,12 @@ matriceStudenti.push(nuovoStudente);
 console.log(matriceStudenti);
 var new_ArrayEl = document.getElementById('new_array');
 
-new_ArrayEl.innerHTML = matriceStudenti;
+for (var chiave in matriceStudenti) {
+
+    console.log(matriceStudenti[chiave]['nome']);
+
+    new_ArrayEl.innerHTML += `<ul>${matriceStudenti[chiave]['nome']} ${matriceStudenti[chiave]['cognome']} ${matriceStudenti[chiave]['age']}, </ul>`;
+
+};
+
+
